@@ -12,7 +12,7 @@ export default class CartPage {
   }
 
   getItemDeleteButtonLocator(itemName: string, itemSize: string): Locator {
-    return this.page.getByRole('button', { name: itemName }).filter({ hasText: itemSize });
+    return this.getCartItemLocator(itemName, itemSize).getByRole('button');
   }
 
   getCartItemLocator(itemName: string, itemSize: string): Locator {

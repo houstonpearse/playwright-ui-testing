@@ -1,6 +1,20 @@
-# Playwright Lab
+<h1 align="center">Playwright UI testing</h1>
+<br />
+<div align="center">
+  <a href="https://playwright.dev">
+    <img src="https://playwright.dev/img/playwright-logo.svg" alt="Logo" width="200" height="200">
+  </a>
+<h3 align="center">Playwright Testing</h3>
+<p>
+Playwright is a multi-language testing framework that makes Testing simple
+</p>
+</div>
 
-a lab exercise for the playwright testing framework using a fake testing [website](https://shop.polymer-project.org/).
+## Overview
+
+A PoC for the playwright testing framework using a fake testing [website](https://shop.polymer-project.org/).
+
+Using TypeScript and nodeJS
 
 ## Scenario
 
@@ -15,6 +29,13 @@ a lab exercise for the playwright testing framework using a fake testing [websit
 - Delete the items in the cart
 - Check that cart is clear
 
-## Setup
+## Playwright page object model
 
-npm init playwright@latest
+This PoC uses the Page Object Model testing approach which are a good approach to maintaining large testing suites.
+
+Each Page object maps to a page or a part of the web application. This makes reusing selectors easy and helps keep tests simple and intuitive.
+
+## Setup and Run
+
+npx playwright install
+npx playwright test

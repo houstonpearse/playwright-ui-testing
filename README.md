@@ -16,6 +16,12 @@ A PoC for the playwright testing framework using a fake testing [website](https:
 
 Using TypeScript and nodeJS
 
+## CICD
+
+Tests are run on commit/PR to main branch.
+
+A playwright report is created that can be downloaded and viewed to see which test failed/reasons ect..
+
 ## Scenario
 
 - Open the Store page - [link](https://shop.polymer-project.org/)
